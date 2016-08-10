@@ -22,7 +22,7 @@ When using this platform please cite: (TBA).
 ---------------------------------------
 Two full examples are provided in the [examples](examples/) subfolder. 
 #### TET
-The [first example](examples/TET/) contains a complete tutorial on designing protein origami polyhedral. The tutorial is presented in the from of a python notebook.  The demonstrated steps include loading a geometry (ply) file, enumerating all the typologies and circular permutations, choosing the best topology and constructing and evaluating 3D models.  
+The [first example](examples/TET/TET.ipynb) contains a complete tutorial on designing protein origami polyhedral. The tutorial is presented in the from of a python notebook.  The demonstrated steps include loading a geometry (ply) file, enumerating all the typologies and circular permutations, choosing the best topology and constructing and evaluating 3D models.  
 
 #### APHsh
 The second, [APHsh](examples/APHsh/make_config.py) is centered on building models and also serves as an integration test. An antiparallel APH segment is built  The second 
