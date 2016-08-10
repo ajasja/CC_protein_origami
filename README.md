@@ -10,7 +10,7 @@ The computational platform is capable of designing amino-acid sequences and buil
 1.	**Specifying the polyhedral geometry**
 2.	**Routing the chain**
 3.	**Selecting the optimal topology and circular permutation** 
-4.	**Selecting the building modules from the CC toolkit **
+4.	**Selecting the building modules from the CC toolkit**
 5.	**Building the 3D model**
 6.	**Refining/validating the models via folding simulations** 
 
