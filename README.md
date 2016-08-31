@@ -1,7 +1,7 @@
 (This is a place holder. Code will be released after publication)
 
 #**CoCoPOD**                                 
-##__Co__iled-__Co__il __P__rotein __O__rigami __D__esign platform
+## <b>Co</b>iled-<b>Co</b>il <b>P</b>rotein <b>O</b>rigami <b>D</b>esign platform
 
 ![Images of designed protein origami](images/for-readme.png)
 
