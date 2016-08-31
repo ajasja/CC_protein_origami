@@ -1,11 +1,11 @@
 (This is a place holder. Code will be released after publication)
 
-#**PROTEIN ORIGAMI**                                 
-##Platform for the design of single chain protein topological polyhedral cages 
+#**CoCoPOD**                                 
+##__Co__iled-__Co__il __P__rotein __O__rigami __D__esign platform
 
 ![Images of designed protein origami](images/for-readme.png)
 
-The computational platform is capable of designing amino-acid sequences and building 3D models for arbitrary polyhedral meshes constructed from a single polypeptide chain. The edges of the polyhedron are realized as coiled-coil dimer building modules. The design strategy consists of several steps:
+CoCoPOD is capable of designing amino-acid sequences and building 3D models for arbitrary polyhedral meshes constructed from a single polypeptide chain. The edges of the polyhedron are realized as coiled-coil dimer building modules. The design strategy consists of several steps:
 
 1.	**Specifying the polyhedral geometry**
 2.	**Routing the chain**
@@ -14,7 +14,7 @@ The computational platform is capable of designing amino-acid sequences and buil
 5.	**Building the 3D model**
 6.	**Refining/validating the models via folding simulations** 
 
-**PROTEIN ORIGAMI** computational platform performs the first five steps of the design process.  Scripts are provided for automatic execution of all the steps, for maximum flexibility the package functionality is also available from python code.
+**CoCoPOD** performs the first five steps of the design process.  Scripts are provided for automatic execution of all the steps, for maximum flexibility the package functionality is also available from python code.
 
 When using this platform please cite: (TBA).
 
