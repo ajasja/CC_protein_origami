@@ -44,7 +44,9 @@ The models can be built and viewed by by typing in the terminal
 ---------------------------------------
 Using the [Anaconda](https://docs.continuum.io/anaconda/install) python distribution is recommended as it simplifies installing further dependencies. Dependencies can then easily be installed by running:
 
-	conda install numpy scipy pandas ipython ipywidgets pyyaml xlrd
+	conda install numpy scipy pandas ipython ipython-notebook ipywidgets pyyaml xlrd
+	#set the modeller liscence key
+	export KEY_MODELLER=XXXX
 	conda install -c salilab modeller
 	conda install -c omnia mdtraj 
 	pip install plyfile snakemake #not available in conda
@@ -56,7 +58,7 @@ respectively. [Chimera](https://www.cgl.ucsf.edu/chimera/download.html) has to b
 
 	git clone https://github.com/NIC-SBI/protein_origami.git	
 	cd protein_origami
-	python setup.py install
+	python setup.py develop
 
 to install the package.
 
