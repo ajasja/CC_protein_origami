@@ -1,11 +1,11 @@
 (This is a place holder. Code will be released after publication)
 
-#**PROTEIN ORIGAMI**                                 
-##Platform for the design of single chain protein topological polyhedral cages 
+#**CoCoPOD**                                 
+## <b>Co</b>iled-<b>Co</b>il <b>P</b>rotein <b>O</b>rigami <b>D</b>esign platform
 
 ![Images of designed protein origami](images/for-readme.png)
 
-The computational platform is capable of designing amino-acid sequences and building 3D models for arbitrary polyhedral meshes constructed from a single polypeptide chain. The edges of the polyhedron are realized as coiled-coil dimer building modules. The design strategy consists of several steps:
+CoCoPOD is capable of designing amino-acid sequences and building 3D models for arbitrary polyhedral meshes constructed from a single polypeptide chain. The edges of the polyhedron are realized as coiled-coil dimer building modules. The design strategy consists of several steps:
 
 1.	**Specifying the polyhedral geometry**
 2.	**Routing the chain**
@@ -14,7 +14,7 @@ The computational platform is capable of designing amino-acid sequences and buil
 5.	**Building the 3D model**
 6.	**Refining/validating the models via folding simulations** 
 
-**PROTEIN ORIGAMI** computational platform performs the first five steps of the design process.  Scripts are provided for automatic execution of all the steps, for maximum flexibility the package functionality is also available from python code.
+**CoCoPOD** performs the first five steps of the design process.  Scripts are provided for automatic execution of all the steps, for maximum flexibility the package functionality is also available from python code.
 
 When using this platform please cite: (TBA).
 
@@ -54,7 +54,7 @@ Using the [Anaconda](https://docs.continuum.io/anaconda/install) python distribu
 
 respectively. [Chimera](https://www.cgl.ucsf.edu/chimera/download.html) has to be installed separately. Chimera must be available on the system path.
 
-**PROTEIN ORIGAMI** design software is available as a git repository [protein origami](https://github.com/NIC-SBI/protein_origami). The files can be cloned to any location. Using command *cd* move to the folder poly_modeller and run 
+**PROTEIN ORIGAMI** design software is available as a git repository [protein origami](https://github.com/NIC-SBI/protein_origami). The files can be cloned to any location.
 
 	git clone https://github.com/NIC-SBI/protein_origami.git	
 	cd protein_origami
