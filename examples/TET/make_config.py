@@ -2,27 +2,27 @@ model_name = "TET12SN"
 annotated_sequence = """
 M
 LEE ELKQLEE ELQAIEE QLAQLQW KAQARKE KLAQLKE KL	|APHshSN
-SGPGS
+GSGPG
 SPED EIQQLEE EISQLEQ KNSELKE KNQELKY	|P3SN
-SGPGS
+GSGPG
 DIEQ ELERAKE SIRRLEQ EVNQERS RMQYLQT LLEK	|BCRSN
-SGPGS
+GSGPG
 QLED KVEELLS KNYHLEN EVERLKK LV	|GCNshSN
-SGPGS
+GSGPG
 LEE ELKQLEE ELQAIEE QLAQLQW KAQARKE KLAQLKE KL	|APHshSN
-SGPGS
+GSGPG
 SPED EIQQLEE KNSQLKQ EISQLEE KNQELKY	|P7SN
-SGPGS
+GSGPG
 QLED KVEELLS KNYHLEN EVERLKK LV	|GCNshSN
-SGPGS
+GSGPG
 SPED KISQLKE KIQQLKQ ENQQLEE ENSQLEY	|P4SN
-SGPGS
+GSGPG
 SPED ENSQLEE KISQLKQ KNSELKE EIQQLEY	|P5SN
-SGPGS
+GSGPG
 SPED KISELKE ENQQLEQ KIQQLKE ENSQLEY	|P8SN
-SGPGS
+GSGPG
 DIEQ ELERAKE SIRRLEQ EVNQERS RMQYLQT LLEK	|BCRSN
-SGPGS
+GSGPG
 SPED KNSELKE EIQQLEE ENQQLEE KISELKY	|P6SN
 LEHHHHHHHH
 """
@@ -68,9 +68,22 @@ pairs_info = """
 """   
 
 if __name__ == "__main__":
-    import ppmod.make_json as mj   
-    import ppmod.segment_assignment as sa
+    import cocopod.make_json as mj   
+    import cocopod.segment_assignment as sa
+    import cocopod.make_color as mc
+    import cocopod.utils as u
     entire_sequence = sa.deannotate_sequence(annotated_sequence, remove_whitespace=True)  
     pairs = mj.load_pairs(pairs_info)    
+
+    #generate json file 
     mj.generate_json(model_name, entire_sequence, annotated_sequence, pairs)
+    print("Written: "+model_name+".json")    
+    
+    #create chimera script for coloring.
+    mc.chimera_color(model_name+".json", model_name+".chimera", verbose=False)
+    print("Written: "+model_name+".chimera")
+    
+    #write fasta file
+    u.write_fasta_file(model_name+".fasta", model_name, entire_sequence)
+    print("Written: "+model_name+".fasta")
 
