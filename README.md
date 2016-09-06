@@ -44,8 +44,8 @@ The [TET example](examples/TET/TET.ipynb) contains a complete tutorial on design
 		 
 
 ###**Installation**
----------------------------------------
-Using the [Anaconda](https://docs.continuum.io/anaconda/install) python distribution is recommended as it simplifies installing further dependencies. [Miniconda](http://conda.pydata.org/miniconda.html) also works nicely. Dependencies can be installed by running:
+--------------------------------------- 
+Using the [Anaconda](https://www.continuum.io/downloads) python distribution is recommended as it simplifies installing further dependencies. [Miniconda](http://conda.pydata.org/miniconda.html) also works nicely. [Git for windows](https://git-scm.com/download/win) is also recommended. Dependencies can be installed by running:
 
 	conda install numpy scipy pandas ipython ipython-notebook ipywidgets pyyaml xlrd biopython
 	#set the modeller liscence key
