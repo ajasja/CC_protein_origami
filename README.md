@@ -89,9 +89,9 @@ Using the [Anaconda](https://www.continuum.io/downloads) python distribution is 
 respectively. [Chimera](https://www.cgl.ucsf.edu/chimera/download.html) has to be installed separately. Chimera must be available on the system path.
 Note: Currently there are some problems installing Modeller via conda on windows. In case of problems use the [standalone installer](https://salilab.org/modeller/download_installation.html).
 
-**CoCoPOD** is available on [github](https://github.com/NIC-SBI/protein_origami). The files can be cloned to any location. To install the package run:
+**CoCoPOD** is available on [github](https://github.com/NIC-SBI/CC_protein_origami). The files can be cloned to any location. To install the package run:
 
-	git clone https://github.com/NIC-SBI/protein_origami.git cocopod	
+	git clone https://github.com/NIC-SBI/CC_protein_origami.git cocopod	
 	cd cocopod
 	python setup.py develop
 
